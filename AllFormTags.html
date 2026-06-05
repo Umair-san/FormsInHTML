@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Tags in Forms</title>
+</head>
+
+<body style="background-color: antiquewhite;">
+    <h4>Other Tags in forms</h4>
+    <fieldset style="background-color: aliceblue;">
+        <legend>Basic info</legend>
+        <label for="txt">Text:</label>
+        <input id="txt" type="text" name="name">
+        <br>
+        <br>
+        <label for="psw">Password:</label>
+        <input type="password" required name="password">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email">
+        <br>
+        <br>
+        <label for="no">Number:</label>
+        <input type="tel">
+        <br>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" min="1" max="40" name="number">
+        <br>
+        <br>
+        <label for="url">URL:</label>
+        <input type="url" name="url">
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>File Uploads</legend>
+        <label>Upload resume</label><br><br>
+        <input type="file" accept=".pdf,.txt">
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Comments</legend>
+        <label for="comments">Address</label>
+        <br>
+        <textarea name="comments" id="comments"></textarea>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Select section</legend>
+        <input type="checkbox" value="HTML"><LAbel>HTML</LAbel>
+        <input type="checkbox" value="CSS"><label>CSS</label>
+        <input type="checkbox" value="JAVA"><LAbel>JAVA</LAbel>
+        <input type="checkbox" value="Python"><label>Python</label>
+        <br><br>
+
+        <label for="color">choose country</label>
+        <select name="color" id="color">
+            <option value="i">India</option>
+            <option value="c">China</option>
+            <option value="a">America</option>
+        </select>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Control select</legend>
+        <label for="gen">Gender:</label>
+        <label><input type="radio" name="gender" value="male">Male</label>
+        <label><input type="radio" name="gender" value="female">Female</label>
+        <label for="other"><input type="radio" name="gender" value="other">Other</label>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <legend>Date and Time</legend>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date">
+        <br><br>
+        <label for="time">Time:</label>
+        <input type="time">
+        <br><br>
+        <label for="dateTime">Local date time:</label>
+        <input type="datetime-local">
+        <br><br>
+        <label for="month">Month:</label>
+        <input type="month">
+        <br><br>
+        <label for="week">Week:</label>
+        <input type="week">
+    </fieldset>
+    <!-- <fieldset>
+        <label>Search anything</label>
+        <input type="hidden">
+        <input type="search">
+        <input type="image" src="/media/image.png" width="100px" height="100px">
+    </fieldset> -->
+    <br>
+    <br>
+    <fieldset>
+        <legend>Progress and meters</legend>
+        <label for="pro">progress</label>
+        <progress id="tasks" value="50" max="100"></progress>
+        <br>
+        <label for="me">Meter:</label>
+        <meter value="30" max="100"></meter>
+    </fieldset>
+    <br><br>
+    <fieldset style="background-color:aliceblue;">
+        <legend>Buttons</legend>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </fieldset>
+
+</body>
+
+</html>
